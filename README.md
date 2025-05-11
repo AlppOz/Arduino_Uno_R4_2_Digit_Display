@@ -30,7 +30,7 @@
 
 ## Installation
 
-1. Download the library by clicking on the **[Latest Release](https://github.com/mgecawicz/Arduino_Uno_R4_2_Digit_Display/releases/latest)** link.
+1. Download the library
 2. Extract the downloaded ZIP file.
 3. Move the extracted folder to the Arduino libraries directory.
    - For Windows: `Documents/Arduino/libraries/`
