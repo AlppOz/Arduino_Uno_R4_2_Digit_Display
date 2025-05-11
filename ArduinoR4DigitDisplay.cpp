@@ -129,47 +129,51 @@ void drawNumber(int num, uint8_t frame[8][12]){
   int tensDigit = num / 10;
   int unitsDigit = num % 10;
 
+  //always keep a difference of 4
+  const int SHIFTER_TENS = -4; //-4 is the upmost left. Increase to shift it to the right
+  const int SHIFTER_UNITS = 0;
+
   if (tensDigit == 0){
-    zero(0, frame);
+    zero(SHIFTER_TENS, frame);
   } else if (tensDigit == 1){
-    one(0, frame);
+    one(SHIFTER_TENS, frame);
   } else if (tensDigit == 2){
-    two(0, frame);
+    two(SHIFTER_TENS, frame);
   } else if (tensDigit == 3){
-    three(0, frame);
+    three(SHIFTER_TENS, frame);
   } else if (tensDigit == 4){
-    four(0, frame);
+    four(SHIFTER_TENS, frame);
   }else if (tensDigit == 5){
-    five(0, frame);
+    five(SHIFTER_TENS, frame);
   }else if (tensDigit == 6){
-    six(0, frame);
+    six(SHIFTER_TENS, frame);
   }else if (tensDigit == 7){
-    seven(0, frame);
+    seven(SHIFTER_TENS, frame);
   }else if (tensDigit == 8){
-    eight(0, frame);
+    eight(SHIFTER_TENS, frame);
   }else if (tensDigit == 9){
-    nine(0, frame);
+    nine(SHIFTER_TENS, frame);
   }
 
   if (unitsDigit == 0){
-    zero(4, frame);
+    zero(SHIFTER_UNITS, frame);
   } else if (unitsDigit == 1){
-    one(4, frame);
+    one(SHIFTER_UNITS, frame);
   } else if (unitsDigit == 2){
-    two(4, frame);
+    two(SHIFTER_UNITS, frame);
   } else if (unitsDigit == 3){
-    three(4, frame);
+    three(SHIFTER_UNITS, frame);
   } else if (unitsDigit == 4){
-    four(4, frame);
+    four(SHIFTER_UNITS, frame);
   } else if (unitsDigit == 5){
-    five(4, frame);
+    five(SHIFTER_UNITS, frame);
   } else if (unitsDigit == 6){
-    six(4, frame);
+    six(SHIFTER_UNITS, frame);
   } else if (unitsDigit == 7){
-    seven(4, frame);
+    seven(SHIFTER_UNITS, frame);
   } else if (unitsDigit == 8){
-    eight(4, frame);
+    eight(SHIFTER_UNITS, frame);
   } else if (unitsDigit == 9){
-    nine(4, frame);
+    nine(SHIFTER_UNITS, frame);
   } 
 }
